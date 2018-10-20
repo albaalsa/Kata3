@@ -4,8 +4,17 @@ package kata3;
 public class Kata3 {
 
     public static void main(String[] args) {
-        HistogramDisplay histo = new HistogramDisplay();
-        histo.execute();
+        Histogram histogram = new Histogram();
+        histogram.increment("gmail.com");
+        histogram.increment("gmail.com");
+        histogram.increment("gmail.com");
+        histogram.increment("gmail.com");
+        histogram.increment("ulpgc.es");
+        histogram.increment("ulpgc.es");
+        histogram.increment("ulpgc.es");
+        histogram.increment("hotmail.es");
+        
+        new HistogramDisplay(histogram).execute();
         
     }
     
